@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      const num = -224;
+function reverseNumber(n) {
+    let x = Math.abs(n)
+    let y = 0
+    while (x > 0) {
+
+        y = y * 10 + (x % 10)
+        x = Math.floor(x / 10)
+    };
+
+    return Math.sign(n) * y
+};
+console.log(reverseNumber(num));
+   </script>
+</body>
+</html>
